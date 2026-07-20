@@ -1,0 +1,31 @@
+diamond_node_audit_entry:
+  type: "cebl_op_robustness_report"
+  fields:
+    run_id: string
+    claim_count: int
+    base_status: "CRYSTALLINE | DUCTILE_COLLAPSE | SHATTERED_AT_BASE"
+    vulnerability_score: float  # Frobenius norm of IFT Jacobian
+    critical_premise_idx: int
+    truth_drop: float           # cold snap result
+    energy_breakdown:
+      evidence: float
+      conflict: float
+      inference: float
+      reg: float
+    max_inf_violation: float
+    max_conf_violation: float
+  attestation: genesis_proof_hash
+  endpoint: "dn.genesisconductor.io/cebl-audit"
+status: SPEC
+owner: Genesis Conductor (Evidence plane)
+interfaces:
+  - HAVIS v2.0
+  - DVLO step 5→6 gate
+  - diamondNode audit endpoint
+invariants:
+  - T = σ(u) — no hard clip, no probability claim
+  - K strictly upper-triangular
+  - SHATTERED = convergence ∧ energy ∧ max-violation composite
+  - IFT is screening signal only; cold snap is ground truth
+worked_example: Yennefer of Vengerberg constraint graph (4-node, DUCTILE_COLLAPSE, truth_drop=0.77)
+origin: TORAX Logic-Transport Pilot → v3.0 (audited May 2026)
