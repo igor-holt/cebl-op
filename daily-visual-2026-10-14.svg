@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica,Arial,sans-serif">
+<rect width="1200" height="630" fill="#0b1020"/>
+<text x="60" y="90" fill="#8fb4ff" font-size="22" letter-spacing="4">GENESIS CONDUCTOR · DAILY NEWS</text>
+<text x="60" y="160" fill="#fff" font-size="56" font-weight="700">2026-10-14</text>
+<g font-size="28" fill="#fff">
+<rect x="60" y="210" width="1080" height="80" rx="12" fill="#18213f"/><text x="90" y="262">Live Ops Dashboard</text><text x="900" y="262" fill="#8fb4ff" font-size="22">13:05 UTC</text>
+<rect x="60" y="310" width="1080" height="80" rx="12" fill="#18213f"/><text x="90" y="362">Diamondnode Daily Ops</text><text x="900" y="362" fill="#8fb4ff" font-size="22">11:05 UTC</text>
+<rect x="60" y="410" width="1080" height="80" rx="12" fill="#3a1d25"/><text x="90" y="462">Server Sweep 09h</text><text x="640" y="462" fill="#ff8a8a" font-size="22">attention_required</text><text x="900" y="462" fill="#8fb4ff" font-size="22">09:32 UTC</text>
+</g>
+<text x="60" y="560" fill="#8a94b8" font-size="20">Prior sweep (10-13 17h) also attention_required</text>
+</svg>
